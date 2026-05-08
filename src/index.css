@@ -1,0 +1,62 @@
+/* Общие кнопки */
+.btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-plus {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.btn-minus {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.btn-reset {
+  background: linear-gradient(135deg, #718096, #4a5568);
+}
+
+.btn-start {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #1a202c;
+}
+
+.btn-pause {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #1a202c;
+}
+
+/* Кнопки фильтров */
+.filter-btn {
+  padding: 7px 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 20px;
+  background: white;
+  font-size: 0.85em;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  border-color: #43e97b;
+  color: #2d3748;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  border-color: transparent;
+  color: #1a202c;
+  font-weight: 700;
+}

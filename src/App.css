@@ -1,0 +1,120 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========== ШАПКА ========== */
+.header {
+  background: #1a202c;
+  text-align: center;
+  padding: 35px 20px 25px;
+  color: #ffffff;
+}
+
+.header-badge {
+  display: inline-block;
+  background: #ffffff;
+  color: #1a202c;
+  padding: 5px 18px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.header h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.header-subtitle {
+  color: #e2e8f0;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.header-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95em;
+  color: #ffffff;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+}
+
+.header-info .separator {
+  color: #a0aec0;
+}
+
+/* ========== СЕТКА ========== */
+.dashboard {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background: #edf2f7;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+}
+
+/* ========== КАРТОЧКИ ========== */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.card-title {
+  font-size: 1.15em;
+  color: #1a202c;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.card-desc {
+  color: #4a5568;
+  font-size: 0.85em;
+  margin-bottom: 20px;
+}
+
+.card-desc code {
+  background: #edf2f7;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: #2b6cb0;
+}
+
+/* ========== ПОДВАЛ ========== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #718096;
+  font-size: 0.9em;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+}
